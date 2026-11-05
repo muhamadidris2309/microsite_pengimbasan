@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,14 +7,12 @@
     <title>Pengimbasan SPMI | SDIT Darul Huffadz</title>
 
     <style>
-        /* RESET */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* WARNA UTAMA */
         :root {
             --hijau: #198754;
             --hijau-tua: #116b40;
@@ -23,54 +20,53 @@
             --teks: #26352c;
         }
 
-        /* LATAR HALAMAN */
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: linear-gradient(135deg, #e8f5ec, #f8fcf9);
             color: var(--teks);
             min-height: 100vh;
-            padding: 25px 15px;
+            padding: 30px 15px;
         }
 
-        /* KONTEN UTAMA */
+        /* KOTAK UTAMA */
         .container {
             width: 100%;
-            max-width: 620px;
-            margin: auto;
-            padding: 30px 35px;
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 45px 55px;
             background: #ffffff;
-            border-radius: 22px;
+            border-radius: 30px;
             box-shadow: 0 8px 30px rgba(0, 70, 35, 0.08);
             text-align: center;
         }
 
-        /* LOGO SEKOLAH */
+        /* LOGO */
         .logo {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
 
         .logo img {
             width: 145px;
-            height: 110px;
+            height: 115px;
             object-fit: contain;
         }
 
         /* LABEL */
         .label {
             display: inline-block;
-            padding: 8px 18px;
+            padding: 10px 25px;
             background: var(--hijau-muda);
             color: var(--hijau-tua);
             border-radius: 30px;
-            font-size: 12px;
+            font-size: 15px;
             font-weight: bold;
             letter-spacing: 1px;
         }
 
         /* JUDUL */
         h1 {
-            margin-top: 18px;
-            font-size: 23px;
+            margin-top: 22px;
+            font-size: 29px;
             line-height: 1.4;
             font-weight: 800;
             color: #26352c;
@@ -78,29 +74,29 @@
 
         /* IDENTITAS SEKOLAH */
         .deskripsi {
-            margin-top: 13px;
+            margin-top: 20px;
         }
 
         .nama-sekolah {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             color: var(--hijau);
-            font-size: 23px;
+            font-size: 29px;
             font-weight: 900;
             letter-spacing: 0.5px;
         }
 
         .deskripsi p {
             color: #737b8c;
-            font-size: 15px;
+            font-size: 18px;
             line-height: 1.6;
         }
 
-        /* GARIS PEMISAH */
+        /* GARIS */
         .garis {
-            width: 55px;
-            height: 3px;
+            width: 60px;
+            height: 4px;
             background: #b7dfc4;
-            margin: 22px auto 0;
+            margin: 25px auto 0;
             border-radius: 10px;
         }
 
@@ -108,26 +104,26 @@
         .menu {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-top: 25px;
+            gap: 13px;
+            margin-top: 30px;
         }
 
-        /* TOMBOL MENU */
+        /* TOMBOL */
         .tombol {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 15px;
             width: 100%;
-            min-height: 62px;
-            padding: 11px 17px;
+            min-height: 65px;
+            padding: 12px 22px;
             background: var(--hijau);
             color: #ffffff;
             text-decoration: none;
-            border-radius: 13px;
-            font-size: 15px;
+            border-radius: 35px;
+            font-size: 17px;
             font-weight: bold;
             text-align: left;
-            box-shadow: 0 4px 10px rgba(25, 135, 84, 0.13);
+            box-shadow: 0 4px 12px rgba(25, 135, 84, 0.13);
             transition: 0.25s ease;
         }
 
@@ -147,14 +143,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 39px;
-            height: 39px;
+            min-width: 42px;
+            height: 42px;
             background: rgba(255, 255, 255, 0.18);
-            border-radius: 10px;
-            font-size: 19px;
+            border-radius: 50%;
+            font-size: 20px;
         }
 
-        /* TEKS TOMBOL */
         .teks-menu {
             line-height: 1.4;
         }
@@ -162,50 +157,64 @@
         /* FOOTER */
         footer {
             margin-top: 30px;
-            padding-top: 18px;
+            padding-top: 20px;
             border-top: 1px solid #edf1ee;
             color: #9298a5;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 1.8;
         }
 
         footer strong {
             color: var(--hijau-tua);
-            font-size: 13px;
+            font-size: 15px;
         }
 
-        /* TAMPILAN HP */
+        /* TABLET DAN HP */
         @media screen and (max-width: 600px) {
+
             body {
-                padding: 12px 10px;
+                padding: 15px 10px;
             }
 
             .container {
-                padding: 23px 16px;
-                border-radius: 17px;
+                padding: 28px 18px;
+                border-radius: 20px;
+            }
+
+            .logo {
+                margin-bottom: 18px;
             }
 
             .logo img {
-                width: 120px;
+                width: 115px;
                 height: 90px;
             }
 
             .label {
                 font-size: 11px;
-                padding: 7px 15px;
+                padding: 8px 17px;
             }
 
             h1 {
-                font-size: 19px;
+                font-size: 20px;
                 line-height: 1.45;
+                margin-top: 18px;
+            }
+
+            .deskripsi {
+                margin-top: 15px;
             }
 
             .nama-sekolah {
-                font-size: 20px;
+                font-size: 21px;
             }
 
             .deskripsi p {
                 font-size: 13px;
+            }
+
+            .garis {
+                margin-top: 20px;
             }
 
             .menu {
@@ -214,22 +223,22 @@
             }
 
             .tombol {
-                min-height: 56px;
-                padding: 9px 12px;
+                min-height: 55px;
+                padding: 9px 13px;
                 gap: 11px;
                 font-size: 13px;
-                border-radius: 11px;
+                border-radius: 30px;
             }
 
             .ikon {
                 min-width: 35px;
                 height: 35px;
                 font-size: 17px;
-                border-radius: 9px;
             }
 
             footer {
                 margin-top: 25px;
+                font-size: 11px;
             }
         }
     </style>
@@ -237,85 +246,79 @@
 
 <body>
 
-    <main class="container">
+<main class="container">
 
-        <!-- LOGO SEKOLAH -->
-        <div class="logo">
-            <img src="assets/logo-sekolah.png"
-                 alt="Logo SDIT Darul Huffadz">
-        </div>
+    <div class="logo">
+        <img src="assets/logo-sekolah.png"
+             alt="Logo SDIT Darul Huffadz">
+    </div>
 
-        <!-- LABEL -->
-        <div class="label">
-            MICROSITE KEGIATAN
-        </div>
+    <div class="label">
+        MICROSITE KEGIATAN
+    </div>
 
-        <!-- JUDUL KEGIATAN -->
-        <h1>
-            PENGIMBASAN SPMI,
-            LITERASI NUMERASI,
-            DAN DIGITALISASI PEMBELAJARAN
-        </h1>
+    <h1>
+        PENGIMBASAN SPMI,
+        LITERASI NUMERASI,
+        DAN DIGITALISASI PEMBELAJARAN
+    </h1>
 
-        <!-- IDENTITAS SEKOLAH -->
-        <div class="deskripsi">
-            <h2 class="nama-sekolah">
-                SDIT DARUL HUFFADZ
-            </h2>
+    <div class="deskripsi">
+        <h2 class="nama-sekolah">
+            SDIT DARUL HUFFADZ
+        </h2>
 
-            <p>
-                Pemanfaatan Dana BOSP Kinerja Terbaik Tahun 2026
-            </p>
-        </div>
+        <p>
+            Pemanfaatan Dana BOSP Kinerja Terbaik Tahun 2026
+        </p>
+    </div>
 
-        <div class="garis"></div>
+    <div class="garis"></div>
 
-        <!-- MENU UTAMA -->
-        <nav class="menu" aria-label="Menu kegiatan">
+    <nav class="menu" aria-label="Menu kegiatan">
 
-            <a href="https://drive.google.com/drive/folders/1p-BhVFqoACk_LbOpiLEWPjAgCFbq9t5Z?usp=sharing"
-               class="tombol" target="_blank" rel="noopener">
-                <span class="ikon">📚</span>
-                <span class="teks-menu">MATERI KEGIATAN</span>
-            </a>
+        <a href="https://drive.google.com/drive/folders/1p-BhVFqoACk_LbOpiLEWPjAgCFbq9t5Z?usp=sharing"
+           class="tombol" target="_blank" rel="noopener">
+            <span class="ikon">📚</span>
+            <span class="teks-menu">MATERI KEGIATAN</span>
+        </a>
 
-            <a href="https://drive.google.com/drive/folders/1G6I8LdtPfqJz4ySlZ_yfQL6TIRwq1Wst?usp=sharing"
-               class="tombol" target="_blank" rel="noopener">
-                <span class="ikon">📝</span>
-                <span class="teks-menu">FORMAT LK PENGIMBASAN</span>
-            </a>
+        <a href="https://drive.google.com/drive/folders/1G6I8LdtPfqJz4ySlZ_yfQL6TIRwq1Wst?usp=sharing"
+           class="tombol" target="_blank" rel="noopener">
+            <span class="ikon">📝</span>
+            <span class="teks-menu">FORMAT LK PENGIMBASAN</span>
+        </a>
 
-            <a href="https://drive.google.com/drive/folders/1hhjVq8HtrAC7kXTB5RZDrVSPGQdwQyF8?usp=sharing"
-               class="tombol" target="_blank" rel="noopener">
-                <span class="ikon">📤</span>
-                <span class="teks-menu">TUGAS-TUGAS PENGIMBASAN</span>
-            </a>
+        <a href="https://drive.google.com/drive/folders/1hhjVq8HtrAC7kXTB5RZDrVSPGQdwQyF8?usp=sharing"
+           class="tombol" target="_blank" rel="noopener">
+            <span class="ikon">📤</span>
+            <span class="teks-menu">TUGAS-TUGAS PENGIMBASAN</span>
+        </a>
 
-            <a href="https://drive.google.com/drive/folders/1tLDFe87KWpfbpvf4OD8bYjPEeMUnFDIN?usp=sharing"
-               class="tombol" target="_blank" rel="noopener">
-                <span class="ikon">📅</span>
-                <span class="teks-menu">UNDANGAN DAN JADWAL KEGIATAN</span>
-            </a>
+        <a href="https://drive.google.com/drive/folders/1tLDFe87KWpfbpvf4OD8bYjPEeMUnFDIN?usp=sharing"
+           class="tombol" target="_blank" rel="noopener">
+            <span class="ikon">📅</span>
+            <span class="teks-menu">UNDANGAN DAN JADWAL KEGIATAN</span>
+        </a>
 
-            <a href="https://drive.google.com/drive/folders/17pVNKwFHQlLqBFvu6V4T-fc6Rfp7Nyou?usp=sharing"
-               class="tombol" target="_blank" rel="noopener">
-                <span class="ikon">📷</span>
-                <span class="teks-menu">DOKUMENTASI KEGIATAN</span>
-            </a>
+        <a href="https://drive.google.com/drive/folders/17pVNKwFHQlLqBFvu6V4T-fc6Rfp7Nyou?usp=sharing"
+           class="tombol" target="_blank" rel="noopener">
+            <span class="ikon">📷</span>
+            <span class="teks-menu">DOKUMENTASI KEGIATAN</span>
+        </a>
 
-        </nav>
+    </nav>
 
-        <!-- FOOTER -->
-        <footer>
-            <strong>SDIT DARUL HUFFADZ</strong>
-            <br>
-            Pengimbasan SPMI, Literasi Numerasi,
-            dan Digitalisasi Pembelajaran
-            <br>
-            Tahun 2026
-        </footer>
+    <footer>
+        <strong>SDIT DARUL HUFFADZ</strong>
+        <br>
+        Pengimbasan SPMI, Literasi Numerasi,
+        dan Digitalisasi Pembelajaran
+        <br>
+        Tahun 2026
+    </footer>
 
-    </main>
+</main>
 
 </body>
 </html>
