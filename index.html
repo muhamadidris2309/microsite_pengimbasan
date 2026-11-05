@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Microsite Pengimbasan | SDIT Darul Huffadz</title>
+    <title>Pengimbasan SPMI | SDIT Darul Huffadz</title>
 
     <style>
         /* RESET */
@@ -14,185 +15,221 @@
             box-sizing: border-box;
         }
 
-        /* WARNA DAN LATAR HALAMAN */
+        /* WARNA UTAMA */
+        :root {
+            --hijau: #198754;
+            --hijau-tua: #116b40;
+            --hijau-muda: #eaf5ed;
+            --teks: #26352c;
+        }
+
+        /* LATAR HALAMAN */
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(120deg, #e8f5ec, #f4fbf5);
-            color: #202638;
+            background: linear-gradient(135deg, #e8f5ec, #f8fcf9);
+            color: var(--teks);
             min-height: 100vh;
-            padding: 25px;
+            padding: 25px 15px;
         }
 
         /* KONTEN UTAMA */
         .container {
-            max-width: 1000px;
-            min-height: 100vh;
+            width: 100%;
+            max-width: 620px;
             margin: auto;
-            padding: 45px 65px;
+            padding: 30px 35px;
             background: #ffffff;
-            border-radius: 25px;
-            box-shadow: 0 10px 40px rgba(0, 70, 35, 0.08);
+            border-radius: 22px;
+            box-shadow: 0 8px 30px rgba(0, 70, 35, 0.08);
             text-align: center;
         }
 
-        /* LOGO */
+        /* LOGO SEKOLAH */
         .logo {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         .logo img {
-            width: 280px;
-            height: 200px;
+            width: 145px;
+            height: 110px;
             object-fit: contain;
         }
 
-        /* LABEL MICROSITE */
+        /* LABEL */
         .label {
             display: inline-block;
-            padding: 12px 25px;
-            background: #edf5ef;
-            color: #397653;
+            padding: 8px 18px;
+            background: var(--hijau-muda);
+            color: var(--hijau-tua);
             border-radius: 30px;
-            font-size: 17px;
+            font-size: 12px;
             font-weight: bold;
             letter-spacing: 1px;
         }
 
-        /* JUDUL KEGIATAN */
+        /* JUDUL */
         h1 {
-            margin-top: 25px;
-            font-size: 30px;
+            margin-top: 18px;
+            font-size: 23px;
             line-height: 1.4;
             font-weight: 800;
-            color: #202638;
+            color: #26352c;
         }
 
-        /* IDENTITAS SEKOLAH DAN INFORMASI BOSP */
+        /* IDENTITAS SEKOLAH */
         .deskripsi {
-            margin-top: 17px;
+            margin-top: 13px;
         }
 
         .nama-sekolah {
-            margin-bottom: 8px;
-            color: #147342;
-            font-size: 27px;
+            margin-bottom: 6px;
+            color: var(--hijau);
+            font-size: 23px;
             font-weight: 900;
             letter-spacing: 0.5px;
         }
 
         .deskripsi p {
             color: #737b8c;
-            font-size: 19px;
+            font-size: 15px;
             line-height: 1.6;
         }
 
-        /* DAFTAR MENU */
+        /* GARIS PEMISAH */
+        .garis {
+            width: 55px;
+            height: 3px;
+            background: #b7dfc4;
+            margin: 22px auto 0;
+            border-radius: 10px;
+        }
+
+        /* MENU */
         .menu {
-            margin-top: 50px;
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 12px;
+            margin-top: 25px;
         }
 
         /* TOMBOL MENU */
         .tombol {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 14px;
             width: 100%;
-            min-height: 90px;
-            padding: 18px 30px;
-            background: #198754;
+            min-height: 62px;
+            padding: 11px 17px;
+            background: var(--hijau);
             color: #ffffff;
             text-decoration: none;
-            border-radius: 60px;
-            font-size: 21px;
+            border-radius: 13px;
+            font-size: 15px;
             font-weight: bold;
             text-align: left;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 15px rgba(25, 135, 84, 0.18);
+            box-shadow: 0 4px 10px rgba(25, 135, 84, 0.13);
+            transition: 0.25s ease;
         }
 
         .tombol:hover {
-            background: #116b40;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(25, 135, 84, 0.28);
+            background: var(--hijau-tua);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 15px rgba(25, 135, 84, 0.2);
         }
 
         .tombol:focus-visible {
-            outline: 4px solid #a8d8ba;
-            outline-offset: 4px;
+            outline: 3px solid #a8d8ba;
+            outline-offset: 3px;
         }
 
-        /* IKON MENU */
+        /* IKON */
         .ikon {
             display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 55px;
-            height: 55px;
-            background: rgba(255, 255, 255, 0.20);
-            border-radius: 50%;
-            font-size: 26px;
+            min-width: 39px;
+            height: 39px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 10px;
+            font-size: 19px;
+        }
+
+        /* TEKS TOMBOL */
+        .teks-menu {
+            line-height: 1.4;
         }
 
         /* FOOTER */
         footer {
-            margin-top: 45px;
+            margin-top: 30px;
+            padding-top: 18px;
+            border-top: 1px solid #edf1ee;
             color: #9298a5;
-            font-size: 14px;
+            font-size: 12px;
             line-height: 1.8;
+        }
+
+        footer strong {
+            color: var(--hijau-tua);
+            font-size: 13px;
         }
 
         /* TAMPILAN HP */
         @media screen and (max-width: 600px) {
             body {
-                padding: 10px;
+                padding: 12px 10px;
             }
 
             .container {
-                padding: 30px 18px;
-                border-radius: 18px;
+                padding: 23px 16px;
+                border-radius: 17px;
             }
 
             .logo img {
-                width: 140px;
-                height: 80px;
+                width: 120px;
+                height: 90px;
             }
 
             .label {
-                font-size: 13px;
-                padding: 10px 18px;
+                font-size: 11px;
+                padding: 7px 15px;
             }
 
             h1 {
-                font-size: 23px;
+                font-size: 19px;
+                line-height: 1.45;
             }
 
             .nama-sekolah {
-                font-size: 22px;
+                font-size: 20px;
             }
 
             .deskripsi p {
-                font-size: 16px;
+                font-size: 13px;
             }
 
             .menu {
-                margin-top: 35px;
-                gap: 13px;
+                margin-top: 22px;
+                gap: 10px;
             }
 
             .tombol {
-                min-height: 72px;
-                padding: 13px 17px;
-                gap: 13px;
-                font-size: 15px;
+                min-height: 56px;
+                padding: 9px 12px;
+                gap: 11px;
+                font-size: 13px;
+                border-radius: 11px;
             }
 
             .ikon {
-                min-width: 43px;
-                height: 43px;
-                font-size: 21px;
+                min-width: 35px;
+                height: 35px;
+                font-size: 17px;
+                border-radius: 9px;
+            }
+
+            footer {
+                margin-top: 25px;
             }
         }
     </style>
@@ -202,14 +239,13 @@
 
     <main class="container">
 
-        <!-- LOGO SEKOLAH
-             Simpan logo di folder assets dengan nama logo-sekolah.png -->
+        <!-- LOGO SEKOLAH -->
         <div class="logo">
             <img src="assets/logo-sekolah.png"
                  alt="Logo SDIT Darul Huffadz">
         </div>
 
-        <!-- LABEL MICROSITE -->
+        <!-- LABEL -->
         <div class="label">
             MICROSITE KEGIATAN
         </div>
@@ -221,7 +257,7 @@
             DAN DIGITALISASI PEMBELAJARAN
         </h1>
 
-        <!-- IDENTITAS SEKOLAH DAN PROGRAM -->
+        <!-- IDENTITAS SEKOLAH -->
         <div class="deskripsi">
             <h2 class="nama-sekolah">
                 SDIT DARUL HUFFADZ
@@ -232,37 +268,40 @@
             </p>
         </div>
 
-        <!-- MENU UTAMA
-             Ganti tanda # pada href dengan link tujuan masing-masing menu. -->
+        <div class="garis"></div>
+
+        <!-- MENU UTAMA -->
         <nav class="menu" aria-label="Menu kegiatan">
 
-            <a href="https://drive.google.com/drive/folders/1p-BhVFqoACk_LbOpiLEWPjAgCFbq9t5Z?usp=sharing" class="tombol" target="_blank" rel="noopener">
-                <span class="ikon">🔗</span>
-                <span>MATERI KEGIATAN</span>
+            <a href="https://drive.google.com/drive/folders/1p-BhVFqoACk_LbOpiLEWPjAgCFbq9t5Z?usp=sharing"
+               class="tombol" target="_blank" rel="noopener">
+                <span class="ikon">📚</span>
+                <span class="teks-menu">MATERI KEGIATAN</span>
             </a>
 
-
-            <a href="https://drive.google.com/drive/folders/1G6I8LdtPfqJz4ySlZ_yfQL6TIRwq1Wst?usp=sharing" class="tombol" target="_blank" rel="noopener">
+            <a href="https://drive.google.com/drive/folders/1G6I8LdtPfqJz4ySlZ_yfQL6TIRwq1Wst?usp=sharing"
+               class="tombol" target="_blank" rel="noopener">
                 <span class="ikon">📝</span>
-                <span>FORMAT LK PENGIMBASAN</span>
+                <span class="teks-menu">FORMAT LK PENGIMBASAN</span>
             </a>
 
-
-            <a href="https://drive.google.com/drive/folders/1hhjVq8HtrAC7kXTB5RZDrVSPGQdwQyF8?usp=sharing" class="tombol" target="_blank" rel="noopener">
+            <a href="https://drive.google.com/drive/folders/1hhjVq8HtrAC7kXTB5RZDrVSPGQdwQyF8?usp=sharing"
+               class="tombol" target="_blank" rel="noopener">
                 <span class="ikon">📤</span>
-                <span>TUGAS TUGAS PENGIMBASAN</span>
+                <span class="teks-menu">TUGAS-TUGAS PENGIMBASAN</span>
             </a>
 
-            <a href="https://drive.google.com/drive/folders/1tLDFe87KWpfbpvf4OD8bYjPEeMUnFDIN?usp=sharing" class="tombol" target="_blank" rel="noopener">
+            <a href="https://drive.google.com/drive/folders/1tLDFe87KWpfbpvf4OD8bYjPEeMUnFDIN?usp=sharing"
+               class="tombol" target="_blank" rel="noopener">
                 <span class="ikon">📅</span>
-                <span>UNDANGAN DAN JADWAL KEGIATAN</span>
+                <span class="teks-menu">UNDANGAN DAN JADWAL KEGIATAN</span>
             </a>
 
-            <a href="https://drive.google.com/drive/folders/17pVNKwFHQlLqBFvu6V4T-fc6Rfp7Nyou?usp=sharing" class="tombol" target="_blank" rel="noopener">
+            <a href="https://drive.google.com/drive/folders/17pVNKwFHQlLqBFvu6V4T-fc6Rfp7Nyou?usp=sharing"
+               class="tombol" target="_blank" rel="noopener">
                 <span class="ikon">📷</span>
-                <span>DOKUMENTASI KEGIATAN</span>
+                <span class="teks-menu">DOKUMENTASI KEGIATAN</span>
             </a>
-
 
         </nav>
 
